@@ -1,0 +1,741 @@
+@charset "UTF-8";
+/* charset 很重要不然有中文無法編譯 */
+/*  ______________________________________
+
+    CSS Guide
+    ______________________________________  */
+/*  01. 基本樣式                        
+    02. 導覽列 Navbar                            
+    03. 形象區 Hero                        
+    04. 關於我們 About us
+    05. 服務項目 Service
+    06. 作品集 Portfolio
+    07. 聯絡我們 Contact us
+    08. 地圖 Map
+    09. 版權 copyright
+    10. 作品集 portfollo
+    ______________________________________  */
+
+
+
+/*  _____________________________________
+
+    01. 基本樣式
+    _____________________________________  */
+
+    html {
+        font-size: 16px;
+        /*定義全站文字大小*/
+    }
+
+    html,body {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        /* 符合 Windows, Mac OS, Linux, 系統字型
+        font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif; */
+        font-family: Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+        background-color: #f8f9fa;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 0;
+        border: 0;
+        background-color: rgba(255, 255, 255, .5)
+    }
+
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 10px;
+        height: 5px;
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    hr {
+        max-width: 50px;
+        border-width: 1px;
+        border-color: #d6d6d6;
+    }
+
+    hr.light {
+        border-color: #fff;
+    }
+
+    a {
+        color: #848484;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+
+    a:hover {
+        color: #d6d6d6;
+    }
+
+    a:hover,
+    a:focus {
+        text-decoration: none;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        font-family: Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    }
+
+    p {
+        line-height: 1.5rem;
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+          box-sizing: border-box;
+    }
+
+
+    .btn {
+        font-weight: 400;
+        text-transform: uppercase;
+        border-radius: 0rem;
+        font-family: Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    }
+
+    .btn-xl {
+        padding: 0.625rem 2.5rem;
+        border-radius: 3px;
+        box-shadow:3px 3px 3px rgba(0,0,0,.05);
+    }
+
+
+    .section {
+        padding: 4.375rem 0rem;
+    }
+
+    .padding-top {
+        padding-top: 4.375rem;
+    }
+
+    .margin-top {
+        margin-top: 1rem;
+    }
+
+
+    .head {
+        font-size: 2.625rem;
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+    }
+
+    .sub-head {
+        margin: 0 0 1.875rem 0;
+        font-weight: 100;
+        font-size: 1.125rem;
+        text-align: center;
+    }
+
+    .img-customer {
+        padding: .5rem;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: 0.25rem;
+        max-width: 100%;
+        height: auto;
+        box-shadow:3px 3px 3px rgba(0,0,0,.05);
+    }
+
+
+/*  _____________________________________
+
+    02. 導覽列 Navbar
+    _____________________________________  */
+
+
+    #mainNav {
+        font-family: Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+        background: #101010;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+
+    #mainNav .navbar-brand {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ea5504;
+        font-family: Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    }
+
+    #mainNav .navbar-brand:focus,
+    #mainNav .navbar-brand:hover {
+        color: #ff7c00;
+    }
+
+    #mainNav .navbar-nav>li.nav-item>a.nav-link,
+    #mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
+        font-size: .875rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #848484;
+    }
+
+    #mainNav .navbar-nav>li.nav-item>a.nav-link:hover,
+    #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover {
+        color: #d6d6d6;
+    }
+
+    #mainNav .navbar-nav>li.nav-item>a.nav-link.active,
+    #mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active {
+        color: #d6d6d6 !important;
+        background-color: transparent;
+    }
+
+    #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover,
+    #mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active:hover {
+        background-color: transparent!important;
+    }
+
+    @media (min-width: 992px) {
+        #mainNav {
+            background: #101010;
+            /*background-color: transparent;*/
+        }
+        #mainNav .navbar-brand {
+            color: #ea5504;
+        }
+        #mainNav .navbar-brand:focus,
+        #mainNav .navbar-brand:hover {
+            color: #ff7c00;
+        }
+        #mainNav .navbar-nav>li.nav-item>a.nav-link {
+            padding: 0.5rem 1rem;
+        }
+        #mainNav .navbar-nav>li.nav-item>a.nav-link,
+        #mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        #mainNav .navbar-nav>li.nav-item>a.nav-link:hover,
+        #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover {
+            color: #fff;
+        }
+        #mainNav.navbar-shrink {
+            border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+            background-color: #101010;
+        }
+        #mainNav.navbar-shrink .navbar-brand {
+            color: #ff7c00;
+        }
+        #mainNav.navbar-shrink .navbar-brand:focus,
+        #mainNav.navbar-shrink .navbar-brand:hover {
+            color: #ff7c00;
+        }
+        #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link,
+        #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus {
+            color: #848484;
+        }
+        #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:hover,
+        #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus:hover {
+            color: #d6d6d6;
+        }
+    
+    }
+    .navbar-custom .navbar-nav .nav-link {
+        padding: 1rem 0rem;
+    }
+    .navbar-custom .navbar-toggler {
+        outline: none;
+        color: rgba(255, 255, 255, .4);
+        border-color: rgba(255, 255, 255, .2);
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+    .navbar-custom .navbar-toggler:hover, 
+    .navbar-custom .navbar-toggler:focus:hover {
+        color: rgba(255, 255, 255, .6);
+        border-color: rgba(255, 255, 255, .4);
+    }
+
+    .navbar-custom .dropdown-menu {
+        font-size: 0.875rem;
+        background-color: #101010;
+        margin: 0;
+        padding: 0.5rem 0rem;
+        border: 0px;
+        border-radius: 3px;
+        box-shadow:3px 3px 3px rgba(0,0,0,.05);
+    }
+    .navbar-custom .dropdown-item {
+        padding: .875rem 1.5rem;
+        color: rgba(255, 255, 255, .5);
+    }
+    .navbar-custom .dropdown-item:hover, .navbar-custom .dropdown-item:focus {
+        color: #fff;
+        text-decoration: none;
+        background-color: rgba(255,255,255,.05);
+    }
+    .navbar-custom .dropdown-item.active, .navbar-custom .dropdown-item:active {
+        color: #fff;
+        text-decoration: none;
+        background-color: rgba(255,255,255,.1);
+    }
+
+    @media (min-width: 992px) {
+        .navbar-custom .dropdown-menu {
+            margin: .6rem 0 0 0;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+        }
+        .navbar-custom .dropdown-item {
+            padding: 0.5rem 1rem;
+            color: #101010;
+        }
+        .navbar-custom .dropdown-item:hover, .navbar-custom .dropdown-item:focus {
+            color: #fff;
+            text-decoration: none;
+            background-color: #343a40;
+        }
+        .navbar-custom .dropdown-item.active, .navbar-custom .dropdown-item:active {
+            color: #fff;
+            text-decoration: none;
+            background-color: #000;
+        }
+    }
+
+
+
+
+/*  _____________________________________
+
+    03. 形象區  
+    _____________________________________  */
+
+    header.masthead {
+        padding-top: 10rem;
+        padding-bottom: calc(10rem - 56px);
+        background:url(../images/header.jpg) 50% 0 no-repeat fixed;
+    }
+
+    header.masthead hr {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    header.masthead h1 {
+        font-size: 3rem;
+    }
+
+    header.masthead p {
+        font-weight: 300;
+    }
+
+    @media (min-width: 768px) {
+        header.masthead p {
+            font-size: 1.15rem;
+        }
+    }
+
+    @media (min-width: 992px) {
+        header.masthead {
+            height: 100vh;
+            min-height: 650px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        header.masthead h1 {
+            font-size: 4rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        header.masthead h1 {
+            font-size: 5rem;
+        }
+    }
+
+/*  _____________________________________
+
+    04. 關於我們 about 
+    _____________________________________  */
+
+
+/*  _____________________________________
+
+    04. 合作品牌 Clients 
+    _____________________________________  */
+    .clients {
+        background:url(../images/bg-clients.jpg) 50% 0 no-repeat fixed;
+        height: 52.5rem;
+        margin: 0 auto;
+    }
+
+    @media (min-width: 576px) {
+        .clients {
+            height: 39.75rem;
+        }        
+    }
+
+    @media (min-width: 992px) {
+        .clients {
+            height: 33.8rem;
+        }        
+    }
+
+/*  _____________________________________
+
+    05. 服務項目 Service 
+    _____________________________________  */
+    .service {
+        background-color: rgba(0,0,0,.1);
+    }
+
+    .service hr {
+        max-width: 100%;
+        border-width: 1px;
+        border-color: rgba(0,0,0,.1);
+    }
+
+    .service .flex-item {
+        font-size: .875rem;
+        padding: .25rem .5rem;
+        margin: .25rem .5rem .25rem 0rem;
+        background-color: rgba(255,255,255,.7);
+        border: 1px solid rgba(0,0,0,.1);
+    }
+
+
+/*  _____________________________________
+
+    06. 作品 Portfolio 
+    _____________________________________  */
+
+    #portfolio .masthead {
+        background:url(../images/portfolio-.jpg) 50% 55% no-repeat scroll;
+        padding-top: 10rem;
+        background-color: #333 ;
+    }
+
+    #portfolio .container-fluid {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    #portfolio h1 {
+        color: rgba(255,255,255,.8);
+        font-size: 2.625rem;
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    #portfolio .sub-heading {
+        color: #333;
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 0;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    #portfolio .section {
+        padding: 2rem 0rem 0rem 0rem;
+    }
+
+    #portfolio .portfolio.masthead {
+        padding-top: 6rem;
+    }
+
+    #portfolio .nav-custom {
+        border-bottom: 1px solid rgba(0,0,0,.1); 
+    }
+
+    #portfolio .nav-custom .nav-link {
+        display: block;
+        padding: .8rem .8rem .2rem .8rem;
+    }
+
+    #portfolio .nav-custom .nav-item {
+        margin-bottom: -1px;
+    }
+
+    #portfolio .nav-custom .nav-link {
+        color: #848484;
+        font-weight: 700;
+        border-bottom: 3px solid transparent;
+    }
+
+    #portfolio .nav-custom .nav-link:hover, 
+    #portfolio .nav-custom .nav-link:focus,
+    #portfolio .nav-custom .nav-link.active,
+    #portfolio .nav-custom .nav-item.show .nav-link{
+        color: #101010;
+        border-bottom: 3px solid #848484;
+    }
+
+
+    /* ---- button ---- */
+
+    #portfolio .filters {
+        max-width: 100%;
+        margin-bottom: 1rem; 
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+
+    #portfolio .button {
+        background-color: #fff;
+        display: inline-block;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        font-weight: 700;
+        box-shadow:3px 3px 3px rgba(0,0,0,.05);
+    }
+
+    #portfolio .button:hover {
+        color: #fff;
+        background-color: #343a40;
+        border-color: #343a40;
+    }
+
+    #portfolio .button:active,
+    #portfolio .button.is-checked {
+        color: #fff;
+        background-color: #343a40;
+        border-color: #343a40;
+        outline: 0;
+    }
+
+    #portfolio .button.is-checked {
+        color: #fff;
+    }
+
+    #portfolio.button:active {}
+
+
+    /* ---- button-group ---- */
+
+    #portfolio .button-group:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    #portfolio .button-group .button {
+        padding: .25rem .75rem;
+        border-radius: 3px;
+        margin: 0 .1rem .5rem .1rem;
+    }
+
+
+
+
+    /* ---- isotope ---- */
+
+    #portfolio .grid {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+
+    /* clear fix */
+
+    #portfolio .grid:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    /* character */
+
+    #portfolio .character {
+        width: 100%;
+        height: auto;
+        padding: 0.875rem;
+    }
+
+    #portfolio .character .character-link {
+        display: block;
+        position: relative;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #portfolio .character .character-link .character-hover {
+        background: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: all ease 0.5s;
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+    }
+
+    #portfolio .character .character-link .character-hover:hover {
+        opacity: 1;
+    }
+    #portfolio .character .character-link .character-hover h1 {
+        position: absolute;
+        font-weight: 400;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        margin-top: -0.75rem;
+        margin-left: -1.125rem;
+        color: rgba(255, 255, 255, .7);
+    }
+
+    .modal-customer::-webkit-scrollbar-thumb {
+        border-radius: 0;
+        border: 0;
+        background-color: rgba(255, 255, 255, .5)
+    }
+
+    .modal-customer::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 10px;
+        height: 5px;
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    .modal-customer .modal-header{
+        border-bottom: 0px;
+    }
+
+    .modal-customer .modal-content {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: transparent;
+        background-clip: padding-box;
+        border: 0px;
+        border-radius: 3px;
+        outline: 0;
+    }
+    .modal-customer .modal-body {
+        margin: 0 auto;
+    }
+
+    .modal-customer .modal-footer {
+        border-top: 0px;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .modal-customer .close:hover {
+        opacity: 1;
+    }
+    .modal-customer .modal-header .close .lr {
+        height: 50px;
+        width: 2px;
+        margin-left: 35px;
+        background-color: #fff;
+        transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        /* IE 9 */
+        -webkit-transform: rotate(45deg);
+        /* Safari and Chrome */
+        z-index: 1051;
+    }
+
+    .modal-customer .modal-header .close .lr .rl {
+        height: 50px;
+        width: 2px;
+        background-color: #fff;
+        transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(90deg);
+        /* Safari and Chrome */
+        z-index: 1052;
+    }
+    .modal-backdrop.show {
+      opacity: 0.8;
+    }
+
+    @media (min-width: 576px) {
+        #portfolio .nav-custom .nav-link {
+            display: block;
+            padding: 0.5rem 1.5rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        
+    }
+
+/*  _____________________________________
+
+    07. 聯絡我們 Contact us 
+    _____________________________________  */
+
+    .contact h1 {
+        color: #d6d6d6;
+    }
+
+    .contact h2 {
+        color: #848484;
+    }
+
+
+/*  _____________________________________
+
+    08. 地圖 Map 
+    _____________________________________  */
+
+    .map {
+        height: 30rem;
+    }
+
+
+/*  _____________________________________
+
+    09. 版權宣告 Copyright 
+    _____________________________________  */
+
+    .footer-bottom {
+        padding-top: 1rem;
+        padding-bottom: 0.1rem;
+        background-color: #101010;
+    }
+
+    .footer-bottom p {
+        font-weight: 400;
+        color: #848484;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 0.625rem;
+        text-align: center;
+    }
+
+
+/*  _____________________________________
+
+    10. 作品集 portfollo
+    _____________________________________  */
+
+
+
+
+    
+
+    @media (min-width: 576px) {}
+    
+
+    @media (min-width: 768px) {}
+    
+
+    @media (min-width: 992px) {}
+    
+
+    @media (min-width: 1200px) {}
