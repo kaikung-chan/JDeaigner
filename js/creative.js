@@ -328,11 +328,7 @@
 
 })(jQuery);
 
-(function($) {
         $('.box').masonry({
             itemSelector: 'item',
         });
-        $(document).ready(function() {
-            $("body").show(); //等網頁全部的DOM都載入後再顯示body
-        });
-    }
+

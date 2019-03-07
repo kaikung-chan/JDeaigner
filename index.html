@@ -18,6 +18,10 @@
 </head>
 
 <body id="page-top">
+    <div class="centered">
+        <div class="blob-1"></div>
+        <div class="blob-2"></div>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="mainNav">
         <div class="container-fluid">
             <!---- LOGO -->
@@ -185,14 +189,14 @@
         </div>
     </div>
     <!-- 服務項目 service -->
-    <div id="services" class="section service">
+    <div id="services" class="section service bg-light">
         <div class="container">
             <h1 class="head text-dark">服務項目</h1>
             <h2 class="sub-head text-muted">SERVICE</h2>
             <div class="row my-3 justify-content-lg-center">
                 <div class="col-12 col-sm-6 mb-5 mb-md-0">
-                    <h3 class="text-dark text-center sr-services-1-title"><i class="fas fa-layer-group pr-2"></i>品牌識別</h3>
-                    <div class="d-flex justify-content-center flex-wrap text-muted sr-services-1">
+                    <h3 class="sr-services-1-title"><i class="fas fa-layer-group pr-2"></i>品牌識別</h3>
+                    <div class="d-flex justify-content-center flex-wrap sr-services-1">
                         <div class="flex-item">命名定位</div>
                         <div class="flex-item">定義輪廓</div>
                         <div class="flex-item">競品視覺研究</div>
@@ -207,8 +211,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6">
-                    <h3 class="text-dark text-center sr-services-2-title"><i class="fas fa-object-group pr-2"></i>網頁設計</h3>
-                    <div class="d-flex justify-content-center flex-wrap text-muted sr-services-2">
+                    <h3 class="sr-services-2-title"><i class="fas fa-object-group pr-2"></i>網頁設計</h3>
+                    <div class="d-flex justify-content-center flex-wrap sr-services-2">
                         <div class="flex-item">網站需求分析</div>
                         <div class="flex-item">頁面功能規劃</div>
                         <div class="flex-item">視覺風格設定</div>
@@ -223,8 +227,8 @@
             </div>
             <div class="row mt-5">
                 <div class="col-12 col-sm-4 mb-5 mb-md-0">
-                    <h3 class="text-dark text-center sr-services-3-title"><i class="fas fa-pencil-ruler pr-2"></i>平面設計</h3>
-                    <div class="d-flex justify-content-center flex-wrap text-muted sr-services-3">
+                    <h3 class="sr-services-3-title"><i class="fas fa-pencil-ruler pr-2"></i>平面設計</h3>
+                    <div class="d-flex justify-content-center flex-wrap sr-services-3">
                         <div class="flex-item">海報</div>
                         <div class="flex-item">書籍</div>
                         <div class="flex-item">封面</div>
@@ -237,8 +241,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-4 mb-5 mb-md-0">
-                    <h3 class="text-dark text-center sr-services-4-title"><i class="fas fa-chart-pie pr-2"></i>資訊圖表</h3>
-                    <div class="d-flex justify-content-center flex-wrap text-muted sr-services-4">
+                    <h3 class="sr-services-4-title"><i class="fas fa-chart-pie pr-2"></i>資訊圖表</h3>
+                    <div class="d-flex justify-content-center flex-wrap sr-services-4">
                         <div class="flex-item">資訊整理 / 重組</div>
                         <div class="flex-item">溝通層次</div>
                         <div class="flex-item">插畫</div>
@@ -247,8 +251,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-4">
-                    <h3 class="text-dark text-center sr-services-5-title"><i class="fas fa-video pr-2"></i>影片動畫</h3>
-                    <div class="d-flex justify-content-center flex-wrap text-muted sr-services-5">
+                    <h3 class="sr-services-5-title"><i class="fas fa-video pr-2"></i>影片動畫</h3>
+                    <div class="d-flex justify-content-center flex-wrap sr-services-5">
                         <div class="flex-item">腳本發想</div>
                         <div class="flex-item">影片拍攝</div>
                         <div class="flex-item">影片剪輯</div>
@@ -282,7 +286,7 @@
                 </div>
             </div>
         </div>
-    </div>-->
+    </div>
     <!-- 地圖 Map -->
     <div id="map" class="map">
 
@@ -407,6 +411,19 @@
             $('.clients').parallax("50%", 0.2);
             
         })
+
+        //window.onload = function(){
+            //setTimeout(function(){
+                //var loader = document.getElementsByClassName("centered")[0];
+                //loader.className="centered fadeout" ;//使用渐隐的方法淡出loading page
+                //setTimeout(function(){
+                    //loader.style.display="none"
+                //},1000)
+            //},1000)//强制显示loading page 1s
+        //}
+        $(document).ready(function(){
+            $("body").show(); //等網頁全部的DOM都載入後再顯示body
+        });
     </script>
 </body>
 
