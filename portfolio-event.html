@@ -1460,7 +1460,11 @@
     <script type="text/javascript" src="vendor/isotope/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="vendor/isotope/isotope.creative.js"></script>
     <script type="text/javascript" src="vendor/masonry.pkgd.min.js"></script>
-
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("body").show(); //等網頁全部的DOM都載入後再顯示body
+        });
+    </script>
 </body>
 
 </html>
