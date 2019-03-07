@@ -13,16 +13,15 @@
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- Plugin CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body id="page-top">
     <!-- 導覽列 -->
-    <nav class="navbar navbar-custom navbar-expand-lg fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="mainNav">
         <div class="container">
             <!---- LOGO -->
-            <a class="navbar-brand" href="index.html">JDesign</a>
+            <a class="navbar-brand js-scroll-trigger" href="index.html">JDesign</a>
             <!--折疊後 漢堡ICON -->
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <i class="fas fa-bars"></i>
@@ -31,13 +30,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#about">關於我們</a>
+                        <a class="nav-link js-scroll-trigger" href="index.html#about">關於我們</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#clients">合作品牌</a>
+                        <a class="nav-link js-scroll-trigger" href="index.html#clients">合作品牌</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#services">服務項目</a>
+                        <a class="nav-link js-scroll-trigger" href="index.html#services">服務項目</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">作品集</a>
@@ -48,9 +47,8 @@
                             <a class="dropdown-item" href="portfolio-event.html">活動頁</a>
                             <a class="dropdown-item" href="portfolio-info.html">詳情頁</a>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">聯絡我們</a>
+                    </li><li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html#contact">聯絡我們</a>
                     </li>
                 </ul>
             </div>
@@ -82,26 +80,28 @@
                 </ul>
             </div>
         </div>
-        <div class="section">
+        <div class="section bg-light">
             <div class="container">
-                <div class="row">
-                    <div class="col-6 col-md-4">
-                        <img class="img-fluid" src="images/portfolio/brand/jollybuy.png" alt="">
-                    </div>
-                    <div class="col-6 col-md-4">
-                        <img class="img-fluid" src="images/portfolio/brand/js.png" alt="">
-                    </div>
-                    <div class="col-6 col-md-4">
-                        <img class="img-fluid" src="images/portfolio/brand/greendays.png" alt="">
-                    </div>
-                    <div class="col-6 col-md-4">
-                        <img class="img-fluid" src="images/portfolio/brand/herbuy.png" alt="">
-                    </div>
-                    <div class="col-6 col-md-4">
-                        <img class="img-fluid" src="images/portfolio/brand/15fun.png" alt="">
-                    </div>
-                    <div class="col-6 col-md-4">
-                        <img class="img-fluid" src="images/portfolio/brand/jollywiz.png" alt="">
+                <div class="grid">
+                    <div class="row box">
+                        <div class="item col-6 col-lg-4 character brand">
+                            <img class="img-fluid" src="images/portfolio/brand/jollybuy.png">
+                        </div>  
+                        <div class="item col-6 col-lg-4 character brand">
+                            <img class="img-fluid" src="images/portfolio/brand/js.png">
+                        </div> 
+                        <div class="item col-6 col-lg-4 character brand">
+                            <img class="img-fluid" src="images/portfolio/brand/greendays.png">
+                        </div>
+                        <div class="item col-6 col-lg-4 character brand">
+                            <img class="img-fluid" src="images/portfolio/brand/herbuy.png">
+                        </div> 
+                        <div class="item col-6 col-lg-4 character brand">
+                            <img class="img-fluid" src="images/portfolio/brand/15fun.png">
+                        </div> 
+                        <div class="item col-6 col-lg-4 character brand">
+                            <img class="img-fluid" src="images/portfolio/brand/Jollywiz.png">
+                        </div>  
                     </div>
                 </div>
             </div>
@@ -132,13 +132,7 @@
     <script type="text/javascript" src="vendor/isotope/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="vendor/isotope/isotope.creative.js"></script>
     <script type="text/javascript" src="vendor/masonry.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-    <script>
-        baguetteBox.run('.tz-gallery');
-        baguetteBox.run('.tz-gallery', {
-            buttons: false
-        });
-    </script>
+
 </body>
 
 </html>

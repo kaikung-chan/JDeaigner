@@ -140,6 +140,15 @@
         text-align: center;
     }
 
+    .img-customer {
+        padding: .5rem;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: 0.25rem;
+        max-width: 100%;
+        height: auto;
+        box-shadow:3px 3px 3px rgba(0,0,0,.05);
+    }
 
 
 /*  _____________________________________
@@ -389,19 +398,13 @@
         border-width: 1px;
         border-color: rgba(0,0,0,.1);
     }
-    .service h3 {
-        text-align: center;
-        color: #343a40;
-        font-weight: 700;
-    }
+
     .service .flex-item {
         font-size: .875rem;
         padding: .25rem .5rem;
         margin: .25rem .5rem .25rem 0rem;
-        color: #6c757d;
-        background-color: #fff;
+        background-color: rgba(255,255,255,.7);
         border: 1px solid rgba(0,0,0,.1);
-        box-shadow: 3px 3px 20px rgba(0,0,0,0.05)
     }
 
 
@@ -423,7 +426,7 @@
 
 
     #portfolio h1 {
-        color: #f8f9fa;
+        color: rgba(255,255,255,.8);
         font-size: 2.625rem;
         font-weight: 700;
         margin: 0;
@@ -441,7 +444,7 @@
     }
 
     #portfolio .section {
-        padding: 2rem 0rem 4rem 0rem;
+        padding: 2rem 0rem 0rem 0rem;
     }
 
     #portfolio .portfolio.masthead {
@@ -556,33 +559,109 @@
         padding: 0.875rem;
     }
 
-    #portfolio .tz-gallery {
-        padding: 40px;
+    #portfolio .character .character-link {
+        display: block;
+        position: relative;
+        max-width: 100%;
+        margin: 0 auto;
     }
 
-    #portfolio .tz-gallery .lightbox img {
+    #portfolio .character .character-link .character-hover {
+        background: rgba(0, 0, 0, 0.8);
+        position: absolute;
         width: 100%;
-        background-color: #fff;
-        padding: 0.5rem;
+        height: 100%;
+        opacity: 0;
+        transition: all ease 0.5s;
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+    }
+
+    #portfolio .character .character-link .character-hover:hover {
+        opacity: 1;
+    }
+    #portfolio .character .character-link .character-hover h1 {
+        position: absolute;
+        font-weight: 400;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        margin-top: -0.75rem;
+        margin-left: -1.125rem;
+        color: rgba(255, 255, 255, .7);
+    }
+
+    .modal-customer::-webkit-scrollbar-thumb {
+        border-radius: 0;
+        border: 0;
+        background-color: rgba(255, 255, 255, .5)
+    }
+
+    .modal-customer::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 10px;
+        height: 5px;
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    .modal-customer .modal-header{
+        border-bottom: 0px;
+    }
+
+    .modal-customer .modal-content {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: transparent;
+        background-clip: padding-box;
+        border: 0px;
         border-radius: 3px;
-        border: 1px solid rgba(0,0,0,0.1);
-        transition: 0.2s ease-in-out;
-        box-shadow: 3px 3px 20px rgba(0,0,0,0.05);
+        outline: 0;
+    }
+    .modal-customer .modal-body {
+        margin: 0 auto;
     }
 
-
-    #portfolio .tz-gallery .lightbox img:hover {
-        transform: scale(1.05);
+    .modal-customer .modal-footer {
+        border-top: 0px;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 
-    #portfolio .tz-gallery img {
-        border-radius: 4px;
+    .modal-customer .close:hover {
+        opacity: 1;
+    }
+    .modal-customer .modal-header .close .lr {
+        height: 50px;
+        width: 2px;
+        margin-left: 35px;
+        background-color: #fff;
+        transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        /* IE 9 */
+        -webkit-transform: rotate(45deg);
+        /* Safari and Chrome */
+        z-index: 1051;
     }
 
-    #portfolio .baguetteBox-button {
-        background-color: transparent !important;
+    .modal-customer .modal-header .close .lr .rl {
+        height: 50px;
+        width: 2px;
+        background-color: #fff;
+        transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(90deg);
+        /* Safari and Chrome */
+        z-index: 1052;
     }
-
+    .modal-backdrop.show {
+      opacity: 0.8;
+    }
 
     @media (min-width: 576px) {
         #portfolio .nav-custom .nav-link {
