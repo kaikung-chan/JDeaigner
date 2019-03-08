@@ -2291,6 +2291,16 @@
             </div>
         </div>        
     </div>
+    <div class="scroller-status">
+        <div class="loader-ellips infinite-scroll-request">
+            <span class="loader-ellips__dot"></span>
+            <span class="loader-ellips__dot"></span>
+            <span class="loader-ellips__dot"></span>
+            <span class="loader-ellips__dot"></span>
+        </div>
+    <p class="scroller-status__message infinite-scroll-last">End of content</p>
+    <p class="scroller-status__message infinite-scroll-error">No more pages to load</p>
+    </div>
     
     
 
@@ -7195,6 +7205,21 @@
     <script type="text/javascript" src="vendor/isotope/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="vendor/isotope/isotope.creative.js"></script>
     <script type="text/javascript" src="vendor/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/3.0.3/infinite-scroll.pkgd.min.js"></script>
+    <script>
+        var infScroll = new InfiniteScroll( ".grid", {
+            path: function() {
+                // 頁面路徑
+                if ( this.loadCount < 2 ) {
+                    // 只讀取前兩頁資料
+                    var nextIndex = this.loadCount + 2; // 2
+                    return "page" + nextIndex + ".html"; // page2.html
+                }
+            },
+            append: ".article", // 匯入物件類別
+            status: ".scroller-status" // 捲軸狀態類別
+        })
+    </script>
 </body>
 
 </html>
