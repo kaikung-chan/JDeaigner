@@ -227,11 +227,11 @@
             background-color: #101010;
         }
         #mainNav.navbar-shrink .navbar-brand {
-            color: #ff7c00;
+            color: #848484;
         }
         #mainNav.navbar-shrink .navbar-brand:focus,
         #mainNav.navbar-shrink .navbar-brand:hover {
-            color: #ff7c00;
+            color: #848484;
         }
         #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link,
         #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus {
