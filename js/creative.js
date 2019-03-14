@@ -303,10 +303,17 @@
 
     sr.reveal('.sr-contact-1', {
         delay: 200,
+        easing: 'ease',
         scale: 0
     });
     sr.reveal('.sr-contact-2', {
         delay: 400,
+        easing: 'ease',
+        scale: 0
+    });
+    sr.reveal('.sr-contact-3', {
+        delay: 600,
+        easing: 'ease',
         scale: 0
     });
 
