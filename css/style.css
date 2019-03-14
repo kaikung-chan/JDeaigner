@@ -166,13 +166,13 @@
     #mainNav .navbar-brand {
         font-weight: 700;
         text-transform: uppercase;
-        color: #ea5504;
+        color: #848484;
         font-family: Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
     }
 
     #mainNav .navbar-brand:focus,
     #mainNav .navbar-brand:hover {
-        color: #ff7c00;
+        color: #d6d6d6;
     }
 
     #mainNav .navbar-nav>li.nav-item>a.nav-link,
@@ -205,11 +205,11 @@
             /*background-color: transparent;*/
         }
         #mainNav .navbar-brand {
-            color: #ea5504;
+            color: #848484;
         }
         #mainNav .navbar-brand:focus,
         #mainNav .navbar-brand:hover {
-            color: #ff7c00;
+            color: #d6d6d6;
         }
         #mainNav .navbar-nav>li.nav-item>a.nav-link {
             padding: 8px 16px;
