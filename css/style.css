@@ -319,7 +319,7 @@
         background-image: url(../images/header.jpg);
         background-repeat: no-repeat;
         background-attachment:fixed;
-
+        background-size:cover; 
         min-height: 650px;
     }
 
@@ -368,6 +368,7 @@
         background-image: url(../images/bg-clients.jpg);
         background-repeat: no-repeat;
         background-attachment:fixed;
+        background-size:cover;
     }
 
 
