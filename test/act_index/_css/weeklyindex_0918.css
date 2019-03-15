@@ -1,16 +1,30 @@
-﻿304x184_1304x184_1304x184_1304x184_1304x184_1304x184_1304x184_1304x184_1304x184_1304x184_1304x184_1304x184_1304x184_1/act/act_index/images/bg-1122.jpg/act/act_index/images/bg-1122.jpg/act/act_index/images/bg-1122.jpg/act/act_index/images/bg-1122.jpg/act/act_index/images/bg-1122.jpg/act/act_index/images/bg-1122.jpg/act/act_index/images/bg-1122.jpg/act/act_index/images/bg-1122.jpg@charset "utf-8";
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+﻿@charset "utf-8";
 
 body {
-	margin: 0 auto;<strong></strong>
+	font-family: Microsoft JhengHei;
+	margin: 0 auto;
 }
 
-ul,li{<b></b>
+ul,li{
   list-style:none;
+}
+
+/* 內容 */
+.container {
+	width: 980px;
+	margin: 0 auto;
+}
+
+/* 電視牆 */
+.tv-slides {
+	width: 750px;
+	float: left;
+}
+
+/* 今日驚爆價 */
+.hot-today {
+	width: 220px;
+	float: right;
 }
 
 /*今日驚爆價*/
